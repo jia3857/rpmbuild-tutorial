@@ -1,5 +1,7 @@
 FROM fedora:21
 
+RUN yum install -y yum-plugin-ovl
+
 RUN yum update -y && \
     yum install -y rpm-build tar gcc sudo
 
